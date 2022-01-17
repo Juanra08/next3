@@ -7,11 +7,12 @@ export default function Page () {
     console.log(session);
     return (
       <>
-        Signed in as {session.user.email} <br />
-        <button onClick={() => signOut()}>Cerrar sesión</button>
+        <p className="font-semibold text-3xl text-blue-500 mb-4">Signed in as <span className="font-semibold text-3xl text-gray-500 mb-4" >{session.user.email}</span></p> <br />
+        <button className="btn" onClick={() => signOut()}>Cerrar sesión</button>
+        <h1 className=" text-center font-semibold text-5xl text-blue-500 mb-4">Parte publica</h1>
         <Link href="private">
           <a>
-            <h1>Parte privada</h1>
+            <h1 className="font-semibold text-2xl text-black mb-4" >Parte privada</h1>
           </a>
         </Link>
       </>
@@ -19,10 +20,11 @@ export default function Page () {
   }
   return (
     <>
-      <button onClick={() => signIn()}>Sign in</button>
+      <button className="btn" onClick={() => signIn()}>Sign in</button>
+      <h1 className=" text-center font-semibold text-5xl text-blue-500 mb-4">Parte publica</h1>
       <Link href="private">
         <a>
-          <h2>Private section</h2>
+          <h2 className="font-semibold text-2xl text-black mb-4">Parte privada</h2>
         </a>
       </Link>
     </>
