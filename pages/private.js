@@ -15,8 +15,8 @@ if (session) {
 }
 return (
     <>
-    <h1>Parte privada bloqueada</h1>
-    <p>Debes iniciar sesion para acceder a la parte privada</p>
+    <h1>Acceso denegado</h1>
+    <p>Inicia sesión para acceder a esta página</p>
     <button onClick={() => signIn()}>Sign in</button>
     <br></br>
     <Link href="/">

@@ -20,7 +20,7 @@ export default function Page () {
   return (
     <>
       <button onClick={() => signIn()}>Sign in</button>
-      <Link href="private_section">
+      <Link href="private">
         <a>
           <h2>Private section</h2>
         </a>
